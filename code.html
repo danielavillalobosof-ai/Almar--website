@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -16,228 +15,54 @@
                         "primary": "#ee5b2b",
                         "background-light": "#f8f6f6",
                         "background-dark": "#221510",
-                        "sand-100": "#f4f1ee",
-                        "sand-200": "#e7d5cf",
-                        "terracotta-soft": "#9a5f4c",
+                        "sand": "#e7d5cf",
+                        "terracotta": "#9a5f4c",
                     },
                     fontFamily: {
                         "display": ["Manrope", "sans-serif"],
                         "serif": ["Instrument Serif", "serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    }
                 },
             },
         }
     </script>
-<style>
+    <style>
         .font-serif { font-family: 'Instrument Serif', serif; }
         .font-display { font-family: 'Manrope', sans-serif; }
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
-<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-sand-200 dark:border-white/10 px-6 lg:px-20 py-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-50">
-<div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
-<div class="size-6 text-primary">
-<span class="material-symbols-outlined text-3xl">spa</span>
-</div>
-<h2 class="text-xl font-bold leading-tight tracking-widest font-display">ALMARE</h2>
-</div>
-<div class="hidden md:flex flex-1 justify-center gap-8">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Philosophy</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Rituals</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Suites</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Experiences</a>
-</div>
-<div class="flex items-center gap-4">
-<button class="flex min-w-[100px] items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-sm font-bold tracking-wide hover:opacity-90 transition-opacity">
-                        Book Now
-                    </button>
-<span class="material-symbols-outlined md:hidden">menu</span>
-</div>
-</header>
-<main class="flex flex-col">
-<section class="relative h-[85vh] w-full overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center bg-no-repeat" data-alt="Turquoise Menorca waters with white sandy coastline" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgi4JfXwmVRt-PcmYbQD7axcIgzqlEnK5W736lzCtppgHQif0zUux3TMaV0reLVdNjU4GOUIxXRt1i6nbfPsjlZ2ykds8eP_DoqZo7QSj8SuR-7K5F0V-9LTCsnQRcdIWPTCeDA3d11_431J9Wc3neB6cFQe4XTLFTddcD1tjM3Bsv5suwKhhHUAmtNwnKSU5F_uka0NxVUjovZZS7Fq-dd14sFgrmwup5-Fy1xHn7VyKPLoCch5vuGdf7S4BMRynH3JnFZx3A_C8");'>
-</div>
-<div class="relative h-full flex flex-col items-center justify-center text-center px-4">
-<h1 class="text-white text-6xl md:text-8xl font-serif mb-6 italic">Find Your Sanctuary</h1>
-<p class="text-white/90 text-base md:text-xl max-w-2xl font-light mb-10">
-                            Experience the soul of Menorca at Almare boutique wellness sanctuary. Rooted in Mediterranean wisdom and the slow pace of island life.
-                        </p>
-<button class="px-10 py-4 bg-white text-slate-900 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300">
-                            Explore
-                        </button>
-</div>
-</section>
-<section class="py-24 px-6 lg:px-40 bg-sand-100 dark:bg-white/5">
-<div class="max-w-4xl mx-auto text-center mb-16">
-<span class="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">Our Essence</span>
-<h2 class="text-4xl md:text-5xl font-serif text-slate-900 dark:text-slate-100 mb-8 italic">Our Philosophy</h2>
-<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed italic">
-                            "Guided by the rhythm of the tides and the warmth of the sun, we believe in a holistic approach to rejuvenation that honors both the body and the land."
-                        </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="flex flex-col items-center text-center p-8 rounded-xl bg-white dark:bg-background-dark shadow-sm border border-sand-200 dark:border-white/5">
-<span class="material-symbols-outlined text-primary text-4xl mb-4">nature</span>
-<h3 class="text-xl font-bold mb-2">Nature-Led</h3>
-<p class="text-terracotta-soft text-sm">Harnessing the raw beauty and botanicals of the Balearic coast.</p>
-</div>
-<div class="flex flex-col items-center text-center p-8 rounded-xl bg-white dark:bg-background-dark shadow-sm border border-sand-200 dark:border-white/5">
-<span class="material-symbols-outlined text-primary text-4xl mb-4">waves</span>
-<h3 class="text-xl font-bold mb-2">Holistic Balance</h3>
-<p class="text-terracotta-soft text-sm">Aligning body and mind through rhythmic ancestral rituals.</p>
-</div>
-<div class="flex flex-col items-center text-center p-8 rounded-xl bg-white dark:bg-background-dark shadow-sm border border-sand-200 dark:border-white/5">
-<span class="material-symbols-outlined text-primary text-4xl mb-4">wb_sunny</span>
-<h3 class="text-xl font-bold mb-2">Slow Living</h3>
-<p class="text-terracotta-soft text-sm">Embracing the timeless pace of Mediterranean island traditions.</p>
-</div>
-</div>
-</section>
-<section class="py-24 px-6 lg:px-20">
-<div class="flex justify-between items-end mb-12">
-<div>
-<span class="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Healing Hands</span>
-<h2 class="text-4xl font-serif italic">Signature Rituals</h2>
-</div>
-<a class="text-sm font-bold border-b-2 border-primary pb-1" href="#">View Treatment Menu</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-<div class="group cursor-pointer">
-<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up of hands applying sea salt scrub to skin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgak8zaedf5gdxleSaZrQQTaedRWjvPlIiVPAsFz2oAd0DRkjcw0n_kTDo3RSYYDtvcgq1jo5dWVgO_kAdbQrL0gy6Y375Z6AaLRjTS4DMO8IaP1o5yOkaUfkkkxN3t-EAAsSgggpKsGW0qkulRAp_mx3HjmmeQ1jqQ2cTr7GMMtuNZ30hCVvtWrpTMVzH6H_9odvXPi2VI7VVjapAwUW-pldGPqUpHwOqQ2sz0FPEFBxYbtCtzTLP5nbOD8I6zKwKhpMxopcTeKs"/>
-</div>
-<h3 class="text-xl font-bold mb-1">Sea Salt Scrub</h3>
-<p class="text-terracotta-soft text-sm mb-2">Purifying coastal minerals &amp; essential oils</p>
-<span class="text-xs uppercase tracking-widest font-bold text-slate-400">60 MINS • €120</span>
-</div>
-<div class="group cursor-pointer">
-<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Olive oil being poured for massage therapy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4-rdQJ3P6IlyyGnV2ZFk3HqBXxfGY1D218RrA3P5K2TI_K0LOfcH5E_b8JikLf2ke1zxJ-j2iXl0GdAZs0RHNErXkohZ2Z4gY4Vov37pDo1yFATebXYs5jFt9diXc9m3dSaE2aP2ssI966j9FGxnpeIugBP6B6qenPtdY_EixBjmJTuOv9pXyRalMp4CJ97gLFHotCyv5qkjE4C_MgLEvKTyANqnHwRAZmmQOivthiLviYYwx7UZSLesjBjEcLYNVQj-7FYUkwek"/>
-</div>
-<h3 class="text-xl font-bold mb-1">Olive Oil Massage</h3>
-<p class="text-terracotta-soft text-sm mb-2">Deeply nourishing local botanicals</p>
-<span class="text-xs uppercase tracking-widest font-bold text-slate-400">90 MINS • €165</span>
-</div>
-<div class="group cursor-pointer">
-<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Textured clay mask in a ceramic bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsauQ7xgUM5AaP_sREXTejp9PrVW4Nmv7Q8Et6sdWLqQfckKQefutDiIk-ZzL9_82ce8nqbH-YH__Xzzf_i2lpSLPzmPNjocyHvngGv3jOIG1rtsDqMODCjmbCfGlEkAU8fssO7OO2r5QsCU9nc4W8fro2A3AgnUpbyCwsgyUSIoOUQ9u5L8i6sSFa2d_PkYXJnRyf7fAU4BCIjzUTL9eLijNqTiuZGLd6a3rKQW5Gzx5u52MZzAVg_H0ZhvL9bjJypZzh1N06tMQ"/>
-</div>
-<h3 class="text-xl font-bold mb-1">Mediterranean Clay Mask</h3>
-<p class="text-terracotta-soft text-sm mb-2">Deeply detoxifying earth &amp; herbal steam</p>
-<span class="text-xs uppercase tracking-widest font-bold text-slate-400">75 MINS • €140</span>
-</div>
-</div>
-</section>
-<section class="py-24 bg-white dark:bg-white/5">
-<div class="grid grid-cols-1 lg:grid-cols-2">
-<div class="aspect-square lg:aspect-auto">
-<img class="w-full h-full object-cover" data-alt="Rustic Mediterranean suite with limestone walls and soft linen bedding" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCznEmauspwpEdqdxyqlXi1AJze30N3enpZleIl-1voYFuxOstSneXx6BHndAadIJrhLrVKvFYae2K--i5pO0qUI7bzgb0P_46D4wgMfRDtCMuHZ__rh9g1itwYwp-wriIF_IZDMWP2w5G8KQFEC6nocTCHIbk2oVfvDJ7fbmM1txJtuJyPG_3GYC3SDgnUhaXpSXziZMlExzTc_MINlxtPAcXW7ZrFIO4_cthExV2PIG1SOzhnhWz37oOZ6BM9rj0bgUMN7RlFglM"/>
-</div>
-<div class="flex flex-col justify-center p-12 lg:p-24 bg-sand-100 dark:bg-background-dark">
-<span class="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">Dwelling</span>
-<h2 class="text-5xl font-serif mb-6 italic">Rustic Suites</h2>
-<p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                                Our suites are a tribute to Menorcan architecture. Hand-carved limestone, sun-bleached wood, and the finest organic linens create a space of absolute quiet and tactile luxury.
-                            </p>
-<div class="space-y-4 mb-10">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">check</span>
-<span>Private limestone terrace</span>
-</div>
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">check</span>
-<span>Artisanal bath rituals in-room</span>
-</div>
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">check</span>
-<span>Organic cotton and linen textiles</span>
-</div>
-</div>
-<button class="w-fit px-10 py-4 bg-primary text-white rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all">
-                                Discover the Suites
-                            </button>
-</div>
-</div>
-</section>
-<section class="py-24 px-6 lg:px-20">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-serif italic mb-4">Tactile Menorca</h2>
-<p class="text-slate-600 dark:text-slate-400">A sensory collection of the elements that define Almare.</p>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-<div class="aspect-square rounded-xl overflow-hidden shadow-lg">
-<img class="w-full h-full object-cover" data-alt="Close up of raw white limestone texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR7nXj8ALHqanDwAfXFUm3vRCftOYalnbZImHlYBuWGZFUq0pQAZVswjkm2k8uq9J3oVIv3ReTH7Xr-RrkqhpjjWkO20AGT9DfMVZKN1Ifl_DYEIQmPCklcIwjt1YvswASkUKZKD3eAmk9km9O8NJ2opkLCoIzLmTszUZ2fX0esKo8pA82pSgiERJ0xjqXO5CFIvnjtB8OIfhkovHjiRgwp8vyefzmlQqDXAHWFK2dEOo_I1T6IkS3lWOqoQp9JL2faiyqHf7RQOk"/>
-</div>
-<div class="aspect-square rounded-xl overflow-hidden shadow-lg">
-<img class="w-full h-full object-cover" data-alt="Soft rumpled beige linen fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgEphICD-TZCMbcUGnxSWiLPRk5_4FvukWsTXsHHjBter8dmwLc-2Yl0Lo3RbnTsNnPdKV0891OQG1Dxfw8SbG6aAUUv91zG2qvA0nMpehPTKeE0XWZVjN4tFmfNRmq0rWEZm08GnY5zxzUrrE9KTibtUj1ztDGfxXnfw3reK0lVnUjqKXplIo23nEQAO_11txp1hwgD5d0vNBh47AHo_VlcmnfLQxYsYWr0uaUPeOcmGUQ0WutHTFgCXL8eYETxLm1cjYfn3Yhm0"/>
-</div>
-<div class="aspect-square rounded-xl overflow-hidden shadow-lg">
-<img class="w-full h-full object-cover" data-alt="Sunlight hitting a terracotta vase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnkKYWY5Rg_wGSFRCFFzaadlRaJXioObp9P0dDKBYflyaD4zQLKGTHcUwKQbqR2srLwqa2axw_MIIY68Xsa91jVcBxKbuSlfPHx5JvGpWxVgUVwYkorRmr_XvKoroCF_odqspajzmhTuNicOM5jajmYKkZX-G3lOvqb9dsenjz-OUpMlh9BcCCZRkIwdf5cXJmRFTAPxKAbXgNOlDLiEWiMFiDtmSRZA4K-aB7TGsEScmtiuNkf6ttq2CMAtmUbHIwS3_zQOZPyFc"/>
-</div>
-<div class="aspect-square rounded-xl overflow-hidden shadow-lg">
-<img class="w-full h-full object-cover" data-alt="Azure blue sea water texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuut5fvfwt_2t83POcFXLjepbyrMkWMbvR_C72cxLgEvUlRGG9dO3FzRJD7mtEZzomSoWPgGSLYy6gdCJxHokHdOf6Mez5pmfzgDMhBwZp-G3cA1s68MLI9K8YmsDy94NzsIJT3sgVoUdLBiPkIoIn7UYwmXMrhupy6TV26KUjC4QsOxZXzUBoYtZwD6Tm4nzq7D_sXZ1fCbs54qWRF2atDr2_I-qyWXIXahgPV_o_O_Sc20AV75L7XGQgU8SSgjgd6ssONtRymEI"/>
-</div>
-</div>
-</section>
-<section class="relative py-32 px-6 overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-primary/10"></div>
-<div class="h-full w-full bg-[radial-gradient(#ee5b2b_1px,transparent_1px)] [background-size:20px_20px] opacity-20"></div>
-</div>
-<div class="relative z-10 max-w-4xl mx-auto text-center">
-<h2 class="text-5xl md:text-6xl font-serif mb-8 italic">Begin Your Journey</h2>
-<p class="text-xl mb-12 text-slate-700 dark:text-slate-300">Join our sanctuary and rediscover the art of being.</p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center">
-<input class="px-8 py-4 rounded-full border border-sand-200 dark:bg-background-dark dark:border-white/10 min-w-[300px] focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Your email address" type="email"/>
-<button class="bg-primary text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform">
-                                Subscribe
-                            </button>
-</div>
-</div>
-</section>
-</main>
-<footer class="bg-background-dark text-white py-16 px-6 lg:px-20 border-t border-white/5">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-<div class="space-y-6">
-<h3 class="text-xl font-bold tracking-widest font-display">ALMARE</h3>
-<p class="text-sm text-slate-400 leading-relaxed">
-                            Boutique Wellness Sanctuary<br/>
-                            Binibeca, Menorca, Spain
-                        </p>
-</div>
-<div class="flex flex-col gap-4">
-<h4 class="text-xs font-bold uppercase tracking-widest text-primary">Discover</h4>
-<a class="text-sm text-slate-400 hover:text-white" href="#">Philosophy</a>
-<a class="text-sm text-slate-400 hover:text-white" href="#">Rituals</a>
-<a class="text-sm text-slate-400 hover:text-white" href="#">Suites</a>
-</div>
-<div class="flex flex-col gap-4">
-<h4 class="text-xs font-bold uppercase tracking-widest text-primary">Guest Services</h4>
-<a class="text-sm text-slate-400 hover:text-white" href="#">Experiences</a>
-<a class="text-sm text-slate-400 hover:text-white" href="#">Reservations</a>
-<a class="text-sm text-slate-400 hover:text-white" href="#">Contact Us</a>
-</div>
-<div class="flex flex-col gap-4">
-<h4 class="text-xs font-bold uppercase tracking-widest text-primary">Connect</h4>
-<div class="flex gap-4">
-<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">public</span>
-<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">camera_alt</span>
-<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">mail</span>
-</div>
-</div>
-</div>
-<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.2em] text-slate-500">
-<p>© 2024 Almare Wellness Sanctuary. All rights reserved.</p>
-<div class="flex gap-8">
-<a class="hover:text-white" href="#">Privacy Policy</a>
-<a class="hover:text-white" href="#">Legal Notice</a>
-</div>
-</div>
-</footer>
-</div>
-</div>
-</body></html>
+    <header class="flex items-center justify-between border-b border-sand dark:border-white/10 px-6 lg:px-20 py-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-50">
+        <div class="flex items-center gap-4">
+            <div class="size-6 text-primary"><span class="material-symbols-outlined text-3xl">spa</span></div>
+            <h2 class="text-xl font-bold tracking-widest font-display">ALMARE</h2>
+        </div>
+        <nav class="hidden md:flex flex-1 justify-center gap-8">
+            <a class="text-sm font-bold text-primary" href="index.html">Home</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="philosophy.html">Philosophy</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </nav>
+        <button class="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold hover:opacity-90">Book Now</button>
+    </header>
+
+    <main>
+        <section class="relative h-[85vh] w-full flex items-center justify-center text-center overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgi4JfXwmVRt-PcmYbQD7axcIgzqlEnK5W736lzCtppgHQif0zUux3TMaV0reLVdNjU4GOUIxXRt1i6nbfPsjlZ2ykds8eP_DoqZo7QSj8SuR-7K5F0V-9LTCsnQRcdIWPTCeDA3d11_431J9Wc3neB6cFQe4XTLFTddcD1tjM3Bsv5suwKhhHUAmtNwnKSU5F_uka0NxVUjovZZS7Fq-dd14sFgrmwup5-Fy1xHn7VyKPLoCch5vuGdf7S4BMRynH3JnFZx3A_C8");'></div>
+            <div class="relative z-10 px-4">
+                <h1 class="text-white text-6xl md:text-8xl font-serif mb-6 italic">Find Your Sanctuary</h1>
+                <p class="text-white/90 text-xl max-w-2xl mx-auto mb-10 font-light">Experience the soul of Menorca at Almare boutique wellness sanctuary.</p>
+                <a href="philosophy.html" class="px-10 py-4 bg-white text-slate-900 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-all">Explore</a>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 lg:px-40 bg-sand/20 text-center">
+            <h2 class="text-4xl font-serif italic mb-8">Our Essence</h2>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto italic">"Guided by the rhythm of the tides and the warmth of the sun."</p>
+        </section>
+    </main>
+
+    <footer class="bg-background-dark text-white/60 py-10 text-center border-t border-white/5">
+        <p class="text-xs tracking-widest uppercase">© 2024 Almare Wellness Sanctuary</p>
+    </footer>
+</body>
+</html>
