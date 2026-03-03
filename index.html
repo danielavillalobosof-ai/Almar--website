@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+    <title>ALMARE | Santuario Boutique de Bienestar en Menorca</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <script id="tailwind-config">
         tailwind.config = {
-            darkMode: "class",
             theme: {
                 extend: {
                     colors: {
                         "primary": "#ee5b2b",
-                        "background-light": "#f8f6f6",
-                        "background-dark": "#221510",
+                        "background": "#f8f6f6",
+                        "dark": "#221510",
                         "sand": "#e7d5cf",
-                        "terracotta": "#9a5f4c",
+                        "stone": "#9a5f4c",
                     },
                     fontFamily: {
                         "display": ["Manrope", "sans-serif"],
@@ -26,43 +26,52 @@
             },
         }
     </script>
-    <style>
-        .font-serif { font-family: 'Instrument Serif', serif; }
-        .font-display { font-family: 'Manrope', sans-serif; }
-    </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
-    <header class="flex items-center justify-between border-b border-sand dark:border-white/10 px-6 lg:px-20 py-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-50">
-        <div class="flex items-center gap-4">
-            <div class="size-6 text-primary"><span class="material-symbols-outlined text-3xl">spa</span></div>
-            <h2 class="text-xl font-bold tracking-widest font-display">ALMARE</h2>
+<body class="bg-background font-display text-dark antialiased">
+    <header class="flex items-center justify-between border-b border-sand/50 px-6 lg:px-20 py-6 sticky top-0 bg-background/90 backdrop-blur-md z-50">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-3xl">spa</span>
+            <h2 class="text-2xl font-bold tracking-[0.2em]">ALMARE</h2>
         </div>
-        <nav class="hidden md:flex flex-1 justify-center gap-8">
-            <a class="text-sm font-bold text-primary" href="index.html">Home</a>
-            <a class="text-sm font-medium hover:text-primary transition-colors" href="philosophy.html">Philosophy</a>
-            <a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+        <nav class="hidden md:flex gap-12 text-xs uppercase tracking-widest font-semibold">
+            <a class="text-primary" href="index.html">Inicio</a>
+            <a class="hover:text-primary transition-colors" href="philosophy.html">Filosofía</a>
+            <a class="hover:text-primary transition-colors" href="contact.html">Contacto</a>
         </nav>
-        <button class="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold hover:opacity-90">Book Now</button>
+        <a href="contact.html" class="bg-dark text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-primary transition-all">Reservar</a>
     </header>
 
     <main>
-        <section class="relative h-[85vh] w-full flex items-center justify-center text-center overflow-hidden">
-            <div class="absolute inset-0 bg-cover bg-center" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgi4JfXwmVRt-PcmYbQD7axcIgzqlEnK5W736lzCtppgHQif0zUux3TMaV0reLVdNjU4GOUIxXRt1i6nbfPsjlZ2ykds8eP_DoqZo7QSj8SuR-7K5F0V-9LTCsnQRcdIWPTCeDA3d11_431J9Wc3neB6cFQe4XTLFTddcD1tjM3Bsv5suwKhhHUAmtNwnKSU5F_uka0NxVUjovZZS7Fq-dd14sFgrmwup5-Fy1xHn7VyKPLoCch5vuGdf7S4BMRynH3JnFZx3A_C8");'></div>
-            <div class="relative z-10 px-4">
-                <h1 class="text-white text-6xl md:text-8xl font-serif mb-6 italic">Find Your Sanctuary</h1>
-                <p class="text-white/90 text-xl max-w-2xl mx-auto mb-10 font-light">Experience the soul of Menorca at Almare boutique wellness sanctuary.</p>
-                <a href="philosophy.html" class="px-10 py-4 bg-white text-slate-900 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-all">Explore</a>
+        <section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center scale-105 transition-transform duration-[10s]" style='background-image: linear-gradient(rgba(34, 21, 16, 0.2), rgba(34, 21, 16, 0.4)), url("https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?auto=format&fit=crop&q=80");'></div>
+            <div class="relative z-10 text-center px-4 max-w-4xl">
+                <span class="text-white text-xs uppercase tracking-[0.4em] mb-6 block">Menorca, Islas Baleares</span>
+                <h1 class="text-white text-6xl md:text-9xl font-serif italic leading-none mb-8">El arte de respirar.</h1>
+                <p class="text-white/90 text-lg md:text-xl font-light leading-relaxed mb-12">Un refugio de calma concebido como respuesta al ritmo acelerado del mundo moderno. Bienvenido a la simplicidad elevada.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#about" class="px-10 py-4 bg-white text-dark rounded-full text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-all">Descubrir Almare</a>
+                </div>
             </div>
         </section>
 
-        <section class="py-24 px-6 lg:px-40 bg-sand/20 text-center">
-            <h2 class="text-4xl font-serif italic mb-8">Our Essence</h2>
-            <p class="text-lg text-slate-600 max-w-2xl mx-auto italic">"Guided by the rhythm of the tides and the warmth of the sun."</p>
-        </section>
-    </main>
-
-    <footer class="bg-background-dark text-white/60 py-10 text-center border-t border-white/5">
-        <p class="text-xs tracking-widest uppercase">© 2024 Almare Wellness Sanctuary</p>
-    </footer>
-</body>
-</html>
+        <section id="about" class="py-32 px-6 lg:px-40 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-6xl font-serif italic mb-10">Un santuario para los sentidos</h2>
+                <p class="text-xl text-stone leading-relaxed font-light italic mb-12">
+                    "Almare nace de la luz mediterránea y la piedra caliza de la isla. Un espacio donde cada detalle está diseñado para restaurar el equilibrio y reconectar con el cuerpo."
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20">
+                    <div class="space-y-4">
+                        <span class="material-symbols-outlined text-primary text-4xl">waves</span>
+                        <h3 class="font-bold tracking-widest uppercase text-xs">Paz Visual</h3>
+                        <p class="text-sm text-stone/80">Arquitectura orgánica que fluye con el paisaje menorquín.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <span class="material-symbols-outlined text-primary text-4xl">self_improvement</span>
+                        <h3 class="font-bold tracking-widest uppercase text-xs">Rituales Conscientes</h3>
+                        <p class="text-sm text-stone/80">Tratamientos diseñados para la piel y la respiración profunda.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <span class="material-symbols-outlined text-primary text-4xl">wb_sunny</span>
+                        <h3 class="font-bold tracking-widest uppercase text-xs">Vida Lenta</h3>
+                        <p class="text-sm text-stone/8
