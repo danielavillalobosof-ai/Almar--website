@@ -1,58 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+    <title>Filosofía | ALMARE Menorca</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <script id="tailwind-config">
         tailwind.config = {
-            darkMode: "class",
             theme: {
                 extend: {
-                    colors: {
-                        "primary": "#ee5b2b",
-                        "background-light": "#fcf9f8",
-                        "background-dark": "#221510",
-                        "sand": "#e7d5cf",
-                    },
-                    fontFamily: {
-                        "display": ["Manrope", "sans-serif"],
-                        "serif": ["Instrument Serif", "serif"]
-                    }
+                    colors: { "primary": "#ee5b2b", "background": "#fcf9f8", "dark": "#221510", "sand": "#e7d5cf", "stone": "#9a5f4c" },
+                    fontFamily: { "display": ["Manrope", "sans-serif"], "serif": ["Instrument Serif", "serif"] }
                 },
             },
         }
     </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
-    <header class="flex items-center justify-between border-b border-sand dark:border-white/10 px-6 lg:px-20 py-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-50">
-        <div class="flex items-center gap-4">
-            <div class="size-6 text-primary"><span class="material-symbols-outlined text-3xl">spa</span></div>
-            <h2 class="text-xl font-bold tracking-widest">ALMARE</h2>
+<body class="bg-background font-display text-dark">
+    <header class="flex items-center justify-between border-b border-sand/50 px-6 lg:px-20 py-6 sticky top-0 bg-background/90 backdrop-blur-md z-50">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-3xl">spa</span>
+            <h2 class="text-2xl font-bold tracking-[0.2em]">ALMARE</h2>
         </div>
-        <nav class="hidden md:flex flex-1 justify-center gap-8">
-            <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
-            <a class="text-sm font-bold text-primary" href="philosophy.html">Philosophy</a>
-            <a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+        <nav class="hidden md:flex gap-12 text-xs uppercase tracking-widest font-semibold">
+            <a class="hover:text-primary transition-colors" href="index.html">Inicio</a>
+            <a class="text-primary" href="philosophy.html">Filosofía</a>
+            <a class="hover:text-primary transition-colors" href="contact.html">Contacto</a>
         </nav>
-        <button class="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold">Book Now</button>
+        <a href="contact.html" class="bg-dark text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-primary transition-all">Reservar</a>
     </header>
 
     <main>
-        <section class="px-6 md:px-20 py-20">
-            <div class="rounded-xl h-[60vh] overflow-hidden relative">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeAwQo4reXqGiC56xaP6DrFdd3HHKJuJKceSR9KArMXV0pHNKGHid0DbxZ60cOYfjJb2ajna_0cNEIY8_6fP4kvk8eSzC-3lmW8h48tU7tv_0nqFIsmgItpit9FoPFGA2F6X9fGQraEzCnzZ4rgIEq-5s2hE8ncy3qiy90RPoyQDurqx3Lv537zKaHnnRUy4-8Z7kRzEh7PHbbTr9dZ9g7wW1WMepoRH3WHa8IIVT2Jk2o3ClNaL9llvhcCZBHmxdehQiuIn_P0zk');"></div>
-                <div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-12">
-                    <h1 class="text-white text-5xl md:text-7xl font-serif italic">Our Philosophy</h1>
+        <section class="px-6 md:px-20 py-24 max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div>
+                    <span class="text-primary text-xs uppercase tracking-[0.3em] mb-4 block">Nuestra Alma</span>
+                    <h1 class="text-5xl md:text-7xl font-serif italic mb-8">Un retorno a lo esencial.</h1>
+                    <p class="text-lg text-stone font-light leading-relaxed mb-6">
+                        En Almare, entendemos el bienestar no como un lujo externo, sino como una reconexión interna. El proyecto nace bajo la premisa de la <strong>simplicidad elevada</strong>: eliminar el ruido para dejar espacio a la respiración.
+                    </p>
+                    <p class="text-lg text-stone font-light leading-relaxed">
+                        Inspirados por la orografía de Menorca, hemos utilizado materiales que pertenecen a la tierra. La piedra de marés, el mortero de cal y la madera recuperada no solo construyen muros, sino que crean un ecosistema de calma.
+                    </p>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl rotate-2">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80" alt="Detalle arquitectura" class="w-full">
                 </div>
             </div>
-            <div class="max-w-3xl mx-auto py-16 text-center">
-                <h2 class="text-3xl font-serif italic mb-6">Deeply Rooted in Wellness</h2>
-                <p class="text-lg text-slate-600 leading-relaxed">A journey into the Mediterranean way of life, where nature and architecture breathe as one.</p>
+        </section>
+
+        <section class="bg-dark text-white py-32 px-6">
+            <div class="max-w-4xl mx-auto text-center mb-20">
+                <h2 class="text-4xl font-serif italic mb-6">Los Pilares de la Calma</h2>
+                <div class="w-20 h-[1px] bg-primary mx-auto"></div>
             </div>
-        </main>
+            <div class="grid md:grid-cols-3 gap-16 max-w-6xl mx-auto text-center">
+                <div class="space-y-6">
+                    <h3 class="font-serif text-3xl italic">El Silencio</h3>
+                    <p class="text-white/60 text-sm font-light leading-loose">Diseñamos espacios acústicos donde el único sonido es el viento entre los olivos y el latido propio.</p>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="font-serif text-3xl italic">La Luz</h3>
+                    <p class="text-white/60 text-sm font-light leading-loose">La luz menorquina baña cada rincón, moviéndose lentamente sobre las texturas naturales de nuestras suites.</p>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="font-serif text-3xl italic">El Tacto</h3>
+                    <p class="text-white/60 text-sm font-light leading-loose">Desde el lino de nuestras sábanas hasta la piedra bajo los pies descalzos, todo es una oda a la textura.</p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
