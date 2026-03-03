@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee5b2b",
+                        "background-light": "#fcf9f8",
+                        "background-dark": "#221510",
+                        "sand": "#e7d5cf",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Instrument Serif", "serif"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <header class="flex items-center justify-between border-b border-sand dark:border-white/10 px-6 lg:px-20 py-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-50">
+        <div class="flex items-center gap-4">
+            <div class="size-6 text-primary"><span class="material-symbols-outlined text-3xl">spa</span></div>
+            <h2 class="text-xl font-bold tracking-widest">ALMARE</h2>
+        </div>
+        <nav class="hidden md:flex flex-1 justify-center gap-8">
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+            <a class="text-sm font-bold text-primary" href="philosophy.html">Philosophy</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </nav>
+        <button class="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold">Book Now</button>
+    </header>
+
+    <main>
+        <section class="px-6 md:px-20 py-20">
+            <div class="rounded-xl h-[60vh] overflow-hidden relative">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeAwQo4reXqGiC56xaP6DrFdd3HHKJuJKceSR9KArMXV0pHNKGHid0DbxZ60cOYfjJb2ajna_0cNEIY8_6fP4kvk8eSzC-3lmW8h48tU7tv_0nqFIsmgItpit9FoPFGA2F6X9fGQraEzCnzZ4rgIEq-5s2hE8ncy3qiy90RPoyQDurqx3Lv537zKaHnnRUy4-8Z7kRzEh7PHbbTr9dZ9g7wW1WMepoRH3WHa8IIVT2Jk2o3ClNaL9llvhcCZBHmxdehQiuIn_P0zk');"></div>
+                <div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-12">
+                    <h1 class="text-white text-5xl md:text-7xl font-serif italic">Our Philosophy</h1>
+                </div>
+            </div>
+            <div class="max-w-3xl mx-auto py-16 text-center">
+                <h2 class="text-3xl font-serif italic mb-6">Deeply Rooted in Wellness</h2>
+                <p class="text-lg text-slate-600 leading-relaxed">A journey into the Mediterranean way of life, where nature and architecture breathe as one.</p>
+            </div>
+        </main>
+    </main>
+</body>
+</html>
