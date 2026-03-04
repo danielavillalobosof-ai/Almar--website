@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Contacto | ALMARE Menorca</title>
+    <title>Contact | ALMARE Menorca</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -25,52 +25,45 @@
             <h2 class="text-2xl font-bold tracking-[0.2em]">ALMARE</h2>
         </div>
         <nav class="hidden md:flex gap-12 text-xs uppercase tracking-widest font-semibold">
-            <a class="hover:text-primary transition-colors" href="index.html">Inicio</a>
-            <a class="hover:text-primary transition-colors" href="philosophy.html">Filosofía</a>
-            <a class="text-primary" href="contact.html">Contacto</a>
+            <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+            <a class="hover:text-primary transition-colors" href="philosophy.html">Philosophy</a>
+            <a class="text-primary" href="contact.html">Contact</a>
         </nav>
-        <button class="bg-dark text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-primary transition-all">Reservar</button>
+        <button class="bg-dark text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-primary transition-all shadow-lg">Book Now</button>
     </header>
 
     <main class="py-24 px-6 md:px-20">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-24">
-            <div class="space-y-12">
-                <div>
-                    <h1 class="text-6xl font-serif italic mb-6">Comienza tu viaje.</h1>
-                    <p class="text-stone font-light text-lg">Estamos aquí para ayudarte a diseñar tu retiro. Escríbenos para consultas sobre estancias personalizadas o rituales específicos.</p>
-                </div>
-                
-                <div class="space-y-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-24 items-center">
+            <div class="space-y-10">
+                <h1 class="text-6xl font-serif italic mb-6">Begin your journey.</h1>
+                <p class="text-stone font-light text-xl leading-relaxed">We invite you to experience the serenity of Almare. Reach out to our concierge for bespoke bookings and wellness inquiries.</p>
+                <div class="space-y-6 pt-6">
                     <div class="flex gap-4 items-center">
                         <span class="material-symbols-outlined text-primary">location_on</span>
-                        <p class="text-sm font-semibold tracking-widest uppercase">Camí de Cavalls, Menorca</p>
+                        <p class="text-sm font-bold tracking-[0.2em] uppercase">Binibeca, Menorca, Spain</p>
                     </div>
                     <div class="flex gap-4 items-center">
                         <span class="material-symbols-outlined text-primary">mail</span>
-                        <p class="text-sm font-semibold tracking-widest uppercase">hola@almare-menorca.com</p>
+                        <p class="text-sm font-bold tracking-[0.2em] uppercase">hello@almare-menorca.com</p>
                     </div>
-                </div>
-                
-                <div class="aspect-video rounded-2xl overflow-hidden grayscale opacity-70">
-                    <img src="https://images.unsplash.com/photo-1548543604-a87c9909afec?auto=format&fit=crop&q=80" class="w-full h-full object-cover">
                 </div>
             </div>
 
-            <div class="bg-white p-10 md:p-16 rounded-3xl shadow-sm border border-sand">
+            <div class="bg-white p-12 rounded-3xl shadow-sm border border-sand">
                 <form class="space-y-8">
-                    <div class="space-y-2">
-                        <label class="text-[10px] uppercase tracking-[0.3em] font-bold text-stone">Nombre Completo</label>
-                        <input type="text" class="w-full border-0 border-b border-sand focus:ring-0 focus:border-primary px-0 py-3 placeholder:text-sand" placeholder="Escribe aquí...">
+                    <div class="space-y-1">
+                        <label class="text-[10px] uppercase tracking-[0.3em] font-bold text-stone">Full Name</label>
+                        <input type="text" class="w-full border-0 border-b border-sand focus:ring-0 focus:border-primary px-0 py-3" placeholder="John Doe">
                     </div>
-                    <div class="space-y-2">
-                        <label class="text-[10px] uppercase tracking-[0.3em] font-bold text-stone">Email</label>
-                        <input type="email" class="w-full border-0 border-b border-sand focus:ring-0 focus:border-primary px-0 py-3 placeholder:text-sand" placeholder="tu@email.com">
+                    <div class="space-y-1">
+                        <label class="text-[10px] uppercase tracking-[0.3em] font-bold text-stone">Email Address</label>
+                        <input type="email" class="w-full border-0 border-b border-sand focus:ring-0 focus:border-primary px-0 py-3" placeholder="john@example.com">
                     </div>
-                    <div class="space-y-2">
-                        <label class="text-[10px] uppercase tracking-[0.3em] font-bold text-stone">Mensaje</label>
-                        <textarea rows="4" class="w-full border-0 border-b border-sand focus:ring-0 focus:border-primary px-0 py-3 placeholder:text-sand" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                    <div class="space-y-1">
+                        <label class="text-[10px] uppercase tracking-[0.3em] font-bold text-stone">Inquiry</label>
+                        <textarea rows="3" class="w-full border-0 border-b border-sand focus:ring-0 focus:border-primary px-0 py-3" placeholder="How can we help you plan your stay?"></textarea>
                     </div>
-                    <button class="w-full bg-dark text-white py-5 rounded-full text-xs font-bold uppercase tracking-[0.2em] hover:bg-primary transition-all shadow-xl">Enviar Solicitud</button>
+                    <button class="w-full bg-dark text-white py-5 rounded-full text-xs font-bold uppercase tracking-[0.3em] hover:bg-primary transition-all">Send Message</button>
                 </form>
             </div>
         </div>
