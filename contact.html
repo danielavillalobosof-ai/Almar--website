@@ -24,7 +24,7 @@
         @media (min-width: 1024px) { body, a, button { cursor: none !important; } }
         @media (max-width: 1023px) { #custom-cursor { display: none; } }
         input, textarea { background-color: #fcfbf8 !important; border: 1px solid #e5e7eb !important; }
-        input:focus, textarea:focus { border-color: #c27c65 !important; outline: none; ring: 1px; ring-color: #c27c65; }
+        input:focus, textarea:focus { border-color: #c27c65 !important; ring: 1px !important; ring-color: #c27c65 !important; outline: none; }
         
         #success-message {
             opacity: 0;
@@ -73,6 +73,7 @@
         </div>
 
         <div class="bg-white p-8 rounded-custom shadow-sm border border-stone-100 relative overflow-hidden">
+            
             <div id="success-message" class="absolute inset-0 bg-white z-20 flex flex-col justify-center items-center text-center p-8">
                 <div class="text-[#c27c65] text-xl font-serif italic mb-2">Message Sent</div>
                 <h3 class="text-2xl text-[#2d2a26] font-serif mb-4">Thank you for contacting us.</h3>
@@ -83,17 +84,17 @@
             <form id="contact-form" class="space-y-6">
                 <div>
                     <label class="text-[10px] uppercase tracking-widest mb-2 block text-stone-400 font-bold">Full Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Guest Name" class="w-full py-4 px-4 text-sm rounded-custom">
+                    <input type="text" id="name" name="name" required placeholder="Guest Name" class="w-full py-4 px-4 text-sm rounded-custom outline-none">
                 </div>
                 
                 <div>
                     <label class="text-[10px] uppercase tracking-widest mb-2 block text-stone-400 font-bold">Email Address</label>
-                    <input type="email" id="email" name="email" required placeholder="email@example.com" class="w-full py-4 px-4 text-sm rounded-custom">
+                    <input type="email" id="email" name="email" required placeholder="email@example.com" class="w-full py-4 px-4 text-sm rounded-custom outline-none">
                 </div>
 
                 <div>
                     <label class="text-[10px] uppercase tracking-widest mb-2 block text-stone-400 font-bold">Message</label>
-                    <textarea id="message" name="message" rows="4" required placeholder="How can our concierge assist you?" class="w-full py-4 px-4 text-sm rounded-custom"></textarea>
+                    <textarea id="message" name="message" rows="4" required placeholder="How can our concierge assist you?" class="w-full py-4 px-4 text-sm rounded-custom outline-none"></textarea>
                 </div>
 
                 <button type="submit" id="submit-btn" class="bg-[#2d2a26] text-white w-full py-5 uppercase text-xs tracking-widest font-bold hover:bg-zinc-800 transition-all shadow-md">
@@ -127,7 +128,7 @@
         };
 
         try {
-            // This fetch targets the Node.js backend you set up
+            // Sends data to your contact.js backend
             const response = await fetch("http://localhost:3000/api/contact", {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
@@ -138,12 +139,11 @@
                 successMsg.classList.add('active');
                 form.reset();
             } else {
-                const result = await response.json();
-                throw new Error(result.message || 'Submission failed');
+                throw new Error('Submission failed');
             }
         } catch (error) {
-            console.error('Error:', error);
-            alert("Connection error. Is your backend server running on port 3000?");
+            console.error('Submission failed:', error);
+            alert("We apologize, but there was an error sending your message. Please ensure your backend server is running.");
         } finally {
             btn.innerText = originalText;
             btn.disabled = false;
@@ -155,7 +155,6 @@
         successMsg.classList.remove('active');
     }
 
-    // Custom cursor logic
     const cursor = document.getElementById('custom-cursor');
     let mX = 0, mY = 0, cX = 0, cY = 0;
     document.addEventListener('mousemove', e => { mX = e.clientX; mY = e.clientY; });
